@@ -1,0 +1,21 @@
+.nav-list-child {}
+
+.nav-item-link {
+  display: block;
+  height: 18px;
+  width: fit-content;
+  margin: 10px 0px;
+  color: var(--color-font-main);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-item-link:hover {
+  color: var(--color-font-active);
+  border-bottom: 1px dotted var(--color-font-active);
+}
+
+.nav-item-link.active {
+  font-weight: 600;
+  color: var(--color-font-active);
+}
