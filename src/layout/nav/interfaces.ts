@@ -21,3 +21,13 @@ export interface MenuItem {
   url: string;
   children?: MenuItem[];
 }
+
+export interface MenuDataArray {
+  id: number;
+  name: string;
+  children?: { tableName: string, tableIds: number[] };
+}
+
+export interface Table {
+  [key: string]: MenuDataArray[]
+}

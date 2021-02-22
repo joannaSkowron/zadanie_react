@@ -9,7 +9,7 @@ interface NavItemProps {
   data: MenuItem;
 }
 
-const NavItemComponent = ({ data }: NavItemProps) => {
+const NavItemComponent: React.FC<NavItemProps> = ({ data }) => {
   const pathname = window.location.pathname.indexOf(data.url) >= 0 ? true : false;
   const [active, setActive] = useState(pathname);
 
