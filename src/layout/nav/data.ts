@@ -1,4 +1,4 @@
-import { Genre, Band, Musician, MenuDataArray } from "./interfaces";
+import { MenuDataArray } from "./interfaces";
 
 export const genres: MenuDataArray[] = [
   {

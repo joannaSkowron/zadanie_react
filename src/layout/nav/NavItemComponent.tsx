@@ -10,7 +10,9 @@ interface NavItemProps {
 }
 
 const NavItemComponent: React.FC<NavItemProps> = ({ data }) => {
-  const pathname = window.location.pathname.indexOf(data.url) >= 0 ? true : false;
+  const pathname = decodeURI(window.location.pathname).indexOf(data.url) >= 0 ? true : false;
+
+
   const [active, setActive] = useState(pathname);
 
   const handleMenuItemClick = () => {

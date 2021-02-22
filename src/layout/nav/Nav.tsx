@@ -1,4 +1,4 @@
-import { MenuItem, Genre, MenuDataArray, Table } from "./interfaces";
+import { MenuItem, MenuDataArray, Table } from "./interfaces";
 import { genres, bands, musicians } from "./data";
 import NavItemComponent from "./NavItemComponent";
 
